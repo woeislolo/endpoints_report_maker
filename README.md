@@ -12,4 +12,5 @@
 
 **Примеры запуска скрипта:**
 ![запуск](https://github.com/woeislolo/endpoints_report_maker/blob/main/screenshots/positive.jpg)
+![запуск негативных](https://github.com/woeislolo/endpoints_report_maker/blob/main/screenshots/negative.jpg)
 ![тесты](https://github.com/woeislolo/endpoints_report_maker/blob/main/screenshots/tests.jpg)
