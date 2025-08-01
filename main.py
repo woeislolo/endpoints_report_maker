@@ -37,7 +37,7 @@ def validate_date(filter_date):
             datetime.strptime(filter_date, "%Y-%m-%d")
             return filter_date
         except ValueError:
-            sys.exit('Дата должна быть в формате YYYY-MM-DD')
+            sys.exit('Несуществующая дата либо неверный формат. Верный формат - YYYY-MM-DD')
     else:
         sys.exit('Дата должна быть в формате YYYY-MM-DD')
 

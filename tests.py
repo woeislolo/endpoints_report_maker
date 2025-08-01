@@ -18,17 +18,17 @@ class TestValidateDate():
     def test_invalid_format_10_symbols(self):
         with pytest.raises(SystemExit) as e:
             validate_date("2025070300")
-        assert str(e.value) == "Дата должна быть в формате YYYY-MM-DD"
+        assert str(e.value) == "Несуществующая дата либо неверный формат. Верный формат - YYYY-MM-DD"
 
     def test_invalid_format_inversion(self):
         with pytest.raises(SystemExit) as e:
             validate_date("30-07-2025")
-        assert str(e.value) == "Дата должна быть в формате YYYY-MM-DD"
+        assert str(e.value) == "Несуществующая дата либо неверный формат. Верный формат - YYYY-MM-DD"
 
     def test_nonexistent_date(self):
         with pytest.raises(SystemExit) as e:
             validate_date("2025-02-30")
-        assert str(e.value) == "Дата должна быть в формате YYYY-MM-DD"
+        assert str(e.value) == "Несуществующая дата либо неверный формат. Верный формат - YYYY-MM-DD"
 
 
 class TestCreateCounter():
